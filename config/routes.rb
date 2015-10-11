@@ -5,6 +5,10 @@ Rails.application.routes.draw do
 
   post '/questions' => 'home#temp'
 
+  get '/questions/:id' => 'home#question'
+
+  post '/answers' => 'home#temp'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

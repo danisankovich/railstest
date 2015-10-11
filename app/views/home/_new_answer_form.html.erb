@@ -1,14 +1,12 @@
-<div id="myModal" class="modal fade" role="dialog">
+<div id="new-answer-modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Ask A New Question</h4>
+        <h4 class="modal-title">New Answer</h4>
       </div>
-      <%= form_for :question, url: '/questions', html: {class: 'form-horizontal'} do %>
+      <%= form_for :answer, url: '/answers', html: {class: 'form-horizontal'} do %>
       <div class="modal-body">
-        <!-- <form class="form-horizontal" role="form" action="/questions" method="POST"> -->
-
           <div class="form-group">
             <label class="control-label col-sm-2" for="email">Email:</label>
             <div class="col-sm-10">
@@ -16,9 +14,9 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2" for="inputQuestion">Question:</label>
+            <label class="control-label col-sm-2" for="inputAnswer">Answer:</label>
             <div class="col-sm-10">
-              <textarea class="form-control" id="inputQuestion" name="question_body" placeholder="What would you like to know" required></textarea>
+              <textarea class="form-control" id="inputAnswer" name="answer_body" placeholder="What is your answer" required></textarea>
             </div>
           </div>
           <div class="form-group">
