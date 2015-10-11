@@ -1,3 +1,10 @@
 rails generate controller home index   => creates a controller /home/index (in app/views/home/index.html.erb)
 
 routes is in config
+
+
+rails g resource question email:string body:text =>   sets up a table with those parameters
+to make the table after that do => rake db:migrate
+
+rails console (to use sql lite. like using mongo shell)
+Question.create email: "misankovich@gmail.com", body: "how old is the universe?"
