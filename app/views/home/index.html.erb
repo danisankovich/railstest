@@ -13,7 +13,7 @@
       <div><%= time_ago_in_words q.created_at %></div>
       <%= q.body %>
       <div>
-        <a href="/questions/12" class="btn btn-success btn-xs">View Answers</a>
+        <a href="<%= question_path(q) %>" class="btn btn-success btn-xs">View Answers</a> <!--a helper to take you to correct path -->
       </div>
     </div>
   </div>

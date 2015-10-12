@@ -8,3 +8,7 @@ to make the table after that do => rake db:migrate
 
 rails console (to use sql lite. like using mongo shell)
 Question.create email: "misankovich@gmail.com", body: "how old is the universe?"
+
+helpers are reusable methods for views. They can be built in or custom.
+
+rake routes => displays all available routes
