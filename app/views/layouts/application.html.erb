@@ -12,6 +12,9 @@
 
   <%= render 'home/navbar' %>
 
+  <div class="well">
+    Current User: <%= current_user_email %>
+  </div>
   <%= yield %>
 
   <%= render 'home/new_question_form' %>
