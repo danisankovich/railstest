@@ -1,3 +1,27 @@
 .navbar {
   margin-bottom: 0;
 }
+
+.boxes {
+  .media {
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: #eee;
+    position: relative;
+    .time {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+    }
+    .viewAnswer {
+      position:absolute;
+      right:15px;
+      bottom: 10px;
+    }
+  }
+  .media:hover {
+    cursor: pointer;
+    background-color: #ddd;
+  }
+}
