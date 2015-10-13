@@ -21,3 +21,7 @@
 
 en:
   hello: "Hello world"
+
+  main_mailer:
+    notify_question_author:
+      subject: 'New Answer to your Question has been submitted.'
